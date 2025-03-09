@@ -43,8 +43,8 @@ window.addEventListener("load", ()=>{
 function loadData(indexValue){
   musicName.innerHTML= songs[indexValue - 1].name;
   musicArtist.innerHTML = songs[indexValue - 1].artist;
-  Playimage.src = "images/"+songs[indexValue - 1].img+".jpg";
-  Audio.src = "music/"+songs[indexValue - 1].audio+".mp3";
+  Playimage.src = songs[indexValue - 1].img+".jpg";
+  Audio.src = songs[indexValue - 1].audio+".mp3";
 }
 
 playBtn.addEventListener("click", ()=>{
